@@ -1,91 +1,98 @@
 # claude-refs
 
-Companion repository for the books **„Claude Code — სრული სახელმძღვანელო"** and **„AI პრაქტიკული გზამკვლევი"** by **Learning Tuts**.
+დამხმარე რეპოზიტორია **Learning Tuts**-ის წიგნებისთვის: **„Claude Code — სრული სახელმძღვანელო"** და **„AI პრაქტიკული გზამკვლევი"**.
 
-> 📘 ეს რეპო წიგნების მკითხველებისთვისაა. ყველა skill, primitive, agent და template, რომელიც წიგნებში ნახსენებია — აქვე copy-paste-ისთვის.
+> 📘 ეს რეპოზიტორია შექმნილია წიგნის მკითხველებისთვის. ყველა skill, primitive, agent და template, რომელიც წიგნებშია განხილული, შეგიძლიათ პირდაპირ დააკოპიროთ და გამოიყენოთ თქვენს პროექტებში (copy-paste).
 
 ---
 
 ## 📂 რა არის აქ
 
 ### `skills/` — 31 skill
-რიუზაბილური Claude Code skill-ები 6 დომენში:
 
-| დომენი | რა ფარავს |
-|---|---|
-| [`developer-tools/`](skills/developer-tools) | code quality, scaffolding (lint, type-check, new component, new page) |
-| [`frontend/`](skills/frontend) | React, Tailwind, Electron, audio libraries |
-| [`backend-dotnet/`](skills/backend-dotnet) | .NET ინტეგრაციები (Stripe, SignalR, Firebase, Cloudflare R2) |
-| [`client-integrations/`](skills/client-integrations) | Browser SDK-ები (FB Pixel, GA4, Firebase Auth, FFmpeg-WASM) |
-| [`cms/`](skills/cms) | Sanity CMS workflow |
-| [`writing/`](skills/writing) | Prose, AI-ism detection, grill-me interviewing |
-| [`analysis/`](skills/analysis) | Business analyst, deep-investigation, mermaid diagrams, invoice organizer |
+მრავალჯერადი გამოყენების (Reusable) Claude Code skill-ები 6 დომენისთვის:
 
-ყველა skill-ს აქვს `SKILL.md` ფაილი frontmatter-ით (`name`, `description`, `triggers`) — ჩასვი `.claude/skills/` ფოლდერში და მზადაა.
+| დომენი | რას ფარავს |
+| --- | --- |
+| [`developer-tools/`](https://www.google.com/search?q=skills/developer-tools) | Code quality, scaffolding (lint, type-check, new component, new page) |
+| [`frontend/`]() | React, Tailwind, Electron, audio libraries |
+| [`backend-dotnet/`]() | .NET ინტეგრაციები (Stripe, SignalR, Firebase, Cloudflare R2) |
+| [`client-integrations/`]() | Browser SDK-ები (FB Pixel, GA4, Firebase Auth, FFmpeg-WASM) |
+| [`cms/`]() | Sanity CMS workflow |
+| [`writing/`]() | Prose, AI-ism detection, grill-me interviewing |
+| [`analysis/`]() | Business analyst, deep-investigation, mermaid diagrams, invoice organizer |
 
-### `templates/` — 5 starter project ე
+თითოეულ skill-ს აქვს `SKILL.md` ფაილი შესაბამისი frontmatter-ით (`name`, `description`, `triggers`). უბრალოდ ჩააგდეთ ის თქვენი პროექტის `.claude/skills/` ფოლდერში და მზადაა გამოსაყენებლად.
+
+### `templates/` — 5 საწყისი (Starter) პროექტი
+
 სრული `.claude/` ფოლდერების ნიმუშები ახალი პროექტებისთვის:
 
 | ნიმუში | აუდიტორია |
-|---|---|
-| [`frontend-ge/`](templates/frontend-ge) | Frontend პროექტი — ქართული instructions |
-| [`frontend-en/`](templates/frontend-en) | Frontend პროექტი — English instructions |
-| [`backend-ge/`](templates/backend-ge) | Backend პროექტი — ქართული instructions |
-| [`backend-en/`](templates/backend-en) | Backend პროექტი — English instructions |
-| [`global/`](templates/global) | Global Claude Code settings (`~/.claude/`) |
+| --- | --- |
+| [`frontend-ge/`]() | Frontend პროექტი — ქართული ინსტრუქციებით |
+| [`frontend-en/`]() | Frontend პროექტი — ინგლისური ინსტრუქციებით |
+| [`backend-ge/`]() | Backend პროექტი — ქართული ინსტრუქციებით |
+| [`backend-en/`]() | Backend პროექტი — ინგლისური ინსტრუქციებით |
+| [`global/`]() | Global Claude Code პარამეტრები (`~/.claude/`) |
 
-თითოეული ნიმუში მოიცავს: `CLAUDE.md` + `primitives/` + `prompts/` + `compositions/` + `agents/` + `skills/` მზადყოფნად.
+თითოეული ნიმუში უკვე გამზადებულია და მოიცავს შემდეგ ფოლდერებს/ფაილებს: `CLAUDE.md` + `primitives/` + `prompts/` + `compositions/` + `agents/` + `skills/`.
 
-დამატებით:
-- [`templates/CONCEPTS.md`](templates/CONCEPTS.md) — Primitives, Skills, Prompts, Agents — რა განსხვავებაა?
-- [`templates/PROJECT_WORKFLOW.md`](templates/PROJECT_WORKFLOW.md) — სრული ფლოუ: idea → plan → build → ship
-- [`templates/plan-template/`](templates/plan-template) — ფაზური დაგეგმვის template-ი
+**დამატებით:**
+
+* [`templates/CONCEPTS.md`]() — Primitives, Skills, Prompts, Agents — რა განსხვავებაა მათ შორის?
+* [`templates/PROJECT_WORKFLOW.md`]() — სრული სამუშაო პროცესი (Flow): idea → plan → build → ship
+* [`templates/plan-template/`]() — ფაზური დაგეგმარების შაბლონი (Template)
 
 ---
 
-## 🚀 როგორ გამოვიყენო
+## 🚀 გამოყენების ინსტრუქცია
 
-### ახალი პროექტისთვის (template)
+### ახალი პროექტისთვის (Template-ის გამოყენება)
+
 ```bash
-# დააკოპირე შესაფერისი template-ი
+# დააკოპირეთ შესაფერისი template-ი
 cp -r templates/frontend-ge/.claude my-project/.claude
 cp templates/frontend-ge/CLAUDE.md my-project/CLAUDE.md
 
-# გახსენი Claude Code
+# გახსენით Claude Code
 cd my-project
 claude
+
 ```
 
 ### არსებულ პროექტში skill-ის დამატება
+
 ```bash
-# მაგალითად: lint + typecheck skill
+# მაგალითად: lint + typecheck skill-ის დამატება
 cp -r skills/developer-tools/check .claude/skills/check
+
 ```
 
 ---
 
-## 📚 წიგნები
+## 📚 წიგნების შესახებ
 
-ეს რეპო companion-ია. პრაქტიკული გადაწყვეტილებების მიღმა აზრის გასაგებად — წიგნებში წაიკითხე:
+ეს რეპოზიტორია მხოლოდ პრაქტიკული დანამატია. იმისათვის, რომ კარგად გაიაზროთ ამ პრაქტიკული გადაწყვეტილებების მიღმა არსებული ლოგიკა, გაეცანით წიგნებს:
 
-- **„Claude Code — სრული სახელმძღვანელო"** (110 გვერდი, ქართული) — დეველოპერებისა და ანალიტიკოსებისთვის
-- **„AI პრაქტიკული გზამკვლევი"** (169 გვერდი, ქართული) — ბიზნესის მფლობელებისთვის, მარკეტერებისთვის, ფრილანსერებისთვის
+* **„Claude Code — სრული სახელმძღვანელო"** (110 გვერდი, ქართულად) — დეველოპერებისა და ანალიტიკოსებისთვის.
+* **„AI პრაქტიკული გზამკვლევი"** (169 გვერდი, ქართულად) — ბიზნესის მფლობელებისთვის, მარკეტერებისა და ფრილანსერებისთვის.
 
-Facebook-ზე ხელმისაწვდომია (29 ₾ თითო ან 49 ₾ ორი ერთად).
+წიგნების შეძენა შეგიძლიათ Facebook-ის მეშვეობით (თითოეულის ფასი — 29 ₾, ორივეს ერთად შეძენისას — 49 ₾).
 
 ---
 
-## 🤝 Contribution
+## 🤝 კონტრიბუცია (Contribution)
 
-ეს არის curated კოლექცია — ყოველ skill-სა და template-ს Production-ში გავცადე.
+ეს არის რჩეული (curated) კოლექცია — თითოეული skill და template რეალურ (Production) გარემოშია დატესტილი.
 
-დაბრუნებითი კავშირისთვის: GitHub Issues ამ რეპოზე.
+უკუკავშირისთვის (Feedback) ან კითხვებისთვის, გთხოვთ, გამოიყენოთ ამ რეპოზიტორიის GitHub Issues.
 
 ---
 
 ## ⚖️ ლიცენზია
 
-MIT — გამოიყენე თავისუფლად, კომერციულ პროექტებში ჩათვლით. ერთადერთი თხოვნა: თუ რამე გააუმჯობესე — გააქციე PR.
+MIT — გამოიყენეთ თავისუფლად, მათ შორის კომერციულ პროექტებშიც. ერთადერთი თხოვნა იქნება: თუ რამეს გააუმჯობესებთ, გამოგვიგზავნეთ PR (Pull Request).
 
 ---
 
